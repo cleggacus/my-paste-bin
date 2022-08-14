@@ -26,4 +26,6 @@ const ThemeChanger = forwardRef<HTMLDivElement, Props>((props, ref) => {
   </>
 })
 
+ThemeChanger.displayName = 'ThemeChanger';
+
 export default ThemeChanger;

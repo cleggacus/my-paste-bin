@@ -15,4 +15,6 @@ const FormRow = forwardRef<HTMLDivElement, Props>((props, ref) => {
   />
 })
 
+FormRow.displayName = 'FormRow';
+
 export default FormRow;

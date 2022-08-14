@@ -22,7 +22,7 @@ const Select = <T extends string>({ options, onChange }: Props<T>) => {
 
     if(ref.current)
       ref.current.blur();
-  }, [selection])
+  }, [options, selection, onChange])
 
   return <div 
     onFocus={() => setOpen(true)}
@@ -48,6 +48,7 @@ const Select = <T extends string>({ options, onChange }: Props<T>) => {
           <div 
             className={`${styles.option} ${selection == key ? styles.selected : ""}`} 
             onClick={() => setSelection(key) }
+            key={key}
           >
             { child.title }
           </div>
