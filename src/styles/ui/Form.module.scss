@@ -1,0 +1,27 @@
+$form-row-seperation: 20px;
+$form-padding: 30px;
+
+.container {
+  padding: $form-padding;
+  border-radius: var(--border-radius);
+  background-color: var(--bg-2);
+  width: 100%;
+
+  .row {
+    display: flex;
+    width: 100%;
+    margin: $form-row-seperation 0;
+
+    > * {
+      flex: 1;
+    }
+  }
+
+  .row:first-child {
+    margin: 0 0 $form-row-seperation 0;
+  }
+
+  .row:last-child {
+    margin: $form-row-seperation 0 0 0;
+  }
+}

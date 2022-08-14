@@ -9,9 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^4.2.1",
+    "@trpc/client": "^9.27.0",
+    "@trpc/next": "^9.27.0",
+    "@trpc/react": "^9.27.0",
+    "@trpc/server": "^9.27.0",
+    "@types/prismjs": "^1.26.0",
+    "@types/react-icons": "^3.0.0",
+    "@types/react-syntax-highlighter": "^15.5.4",
     "next": "12.2.5",
+    "prisma": "^4.2.1",
+    "prismjs": "^1.28.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "react-query": "3",
+    "react-simple-code-editor": "^0.11.3",
+    "react-syntax-highlighter": "^15.5.0",
+    "sass": "^1.54.4",
+    "zod": "^3.18.0"
   },
   "devDependencies": {
     "@types/node": "18.7.2",

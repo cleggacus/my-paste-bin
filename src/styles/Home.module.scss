@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 15px;
+
+  .err {
+    color: var(--fg-err);
+  }
+ 
+  .editor {
+    position: relative;
+    border-radius: var(--border-radius);
+    background-color: var(--bg-3);
+    overflow: auto;
+    height: 300px;
+
+    textarea {
+      top: 0;
+      left: 0;
+      position: absolute;
+      min-height: 100%;
+      min-width: 100%;
+      font-family: 'Roboto';
+      caret-color: var(--fg-1);
+      color: transparent;
+      background-color: transparent;
+      line-height: 1.5;
+      overflow: hidden;
+      white-space: pre;
+    }
+  }
+}

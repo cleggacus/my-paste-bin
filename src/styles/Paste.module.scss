@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  .content {
+    position: relative;
+    border-radius: var(--border-radius);
+    background-color: var(--bg-3);
+    overflow: auto;
+    height: 300px;
+  }
+}

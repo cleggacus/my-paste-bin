@@ -1,0 +1,10 @@
+.icon {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  opacity: 0.6;
+  color: var(--fg-1);
+}
+
+.icon:hover {
+  opacity: 1;
+}

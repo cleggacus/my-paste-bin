@@ -1,0 +1,34 @@
+input, textarea, button {
+  transition: 
+    opacity 0.3s ease, 
+    color 0.3s ease,
+    background-color 0.3s ease;
+  background-color: var(--bg-3);
+  color: var(--fg-1);
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  font-size: 1em;
+}
+
+input::placeholder, textarea::placeholder, button::placeholder {
+  color: var(--fg-2);
+}
+
+textarea {
+  resize: none;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+button {
+  cursor: pointer;
+  opacity: 0.8;
+  background-color: var(--accent-bg-1);
+  color: var(--accent-fg-1);
+}
+
+button:hover {
+  opacity: 1;
+}

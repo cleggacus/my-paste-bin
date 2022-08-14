@@ -1,0 +1,86 @@
+.container {
+  position: relative;
+  transition: color 0.3s ease;
+  color: var(--fg-1);
+  outline: none;
+  border: none;
+  font-size: 1em;
+
+  .title {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: var(--bg-3);
+    overflow: hidden;
+    width: 100%;
+
+    span {
+      flex: 1;
+    }
+  }
+
+  .menu {
+    position: absolute;
+    z-index: 999;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+
+    .menuInner {
+      background-color: var(--bg-3);
+      color: var(--fg-1);
+      width: 100%;
+      overflow: auto;
+
+      transition: 
+        background-color 0.3s ease,
+        color 0.3s ease,
+        max-height 0.3s ease;
+
+      .option {
+        cursor: pointer;
+        transition: 
+          color 0.3s ease,
+          background-color 0.3s ease;
+        padding: 10px 20px;
+        color: var(--fg-2);
+      }
+
+      .option:hover {
+        color: var(--fg-1);
+      }
+      
+      .option.selected {
+        color: var(--fg-1);
+        background-color: var(--accent-bg-1);
+      }
+    } 
+  }
+
+}
+
+.container.open {
+  .title {
+    transition: background-color 0.3s ease;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+  }
+
+  .menuInner {
+    max-height: 200px;
+  }
+}
+
+.container.closed {  
+  .title {
+    transition: 
+      background-color 0.3s ease,
+      border-radius 0.3s ease 0.3s;
+    border-radius: var(--border-radius);
+  }
+
+  .menuInner {
+    max-height: 0;
+  }
+}
