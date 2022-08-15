@@ -1,15 +1,7 @@
-<p align="center">
-  <a href="https://pastebin.liamclegg.co.uk/">
-    <h2 align="center" style="font-size: 3em;">My Paste Bin</h2>
-    <p align="center" style="font-size: 1.5em;"><strong>pastebin.liamclegg.co.uk</strong></p>
-  </a>
-</p>
+# My Paste Bin
 
-<br/>
-<hr/>
-<br/>
-
-![thumbnail](https://i.imgur.com/E7hzBHu.png)
+[![thumbnail](https://i.imgur.com/E7hzBHu.png)](https://pastebin.liamclegg.co.uk/)
+[View at pastebin.liamclegg.co.uk](https://pastebin.liamclegg.co.uk/)
 
 ## Getting Started
 
