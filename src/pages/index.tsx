@@ -21,7 +21,7 @@ const Home: NextPageWithLayout = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
-  const { mutate, isLoading } = trpc.useMutation(["post.create"], {
+  const { mutate, isIdle } = trpc.useMutation(["post.create"], {
     onError: (res) => {
       if(res.data?.zodError) {
         if(res.data.zodError.fieldErrors.content)
@@ -50,7 +50,7 @@ const Home: NextPageWithLayout = () => {
     element.style.height = (element.scrollHeight)+"px";
   }
 
-  return <div className={styles.container}>
+  return <div className={`${styles.container} ${!isIdle ? styles.loading : ""}`}>
     <Form maxWidth={700}>
       <FormRow>
         <h1>Create a paste</h1>
@@ -128,7 +128,7 @@ const Home: NextPageWithLayout = () => {
       </FormRow>
 
       <FormRow>
-        <button onClick={submit}>Create</button>
+        <button onClick={submit}>{!isIdle ? "Loading . . ." : "Create"}</button>
       </FormRow>
     </Form>
   </div>

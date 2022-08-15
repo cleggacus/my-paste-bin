@@ -8,7 +8,7 @@ export const postRouter = createRouter()
     input: z.object({
       content: z.string()
         .min(1, "Field must contain at least 1 character(s)"),
-      title: z.string().default("untitled"),
+      title: z.string().default("Untitled"),
       language: z.enum(languages).default("plaintext"),
     }),
     output: z.object({

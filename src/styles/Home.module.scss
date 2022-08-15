@@ -33,3 +33,8 @@
     }
   }
 }
+
+.container.loading {
+  pointer-events: none;
+  user-select: none;
+}
