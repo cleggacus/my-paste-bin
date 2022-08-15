@@ -13,9 +13,9 @@ Super simple pastebin webapp made with tRPC, NextJS and MongoDB. Supports themes
     <img alt="Stars" src="https://img.shields.io/github/stars/cleggacus/my-paste-bin?color=yellow&style=for-the-badge">
   </a>
   &nbsp;
-  <a href="#">
+  <!-- <a href="#">
     <img alt="Fork" src="https://img.shields.io/github/forks/cleggacus/my-paste-bin?style=for-the-badge" />
-  </a>
+  </a> -->
   &nbsp;
   <a href="https://github.com/cleggacus/my-paste-bin/issueshttps://trpc.io/discord">
     <img alt="Issues" src="https://img.shields.io/github/issues/cleggacus/my-paste-bin?color=red&style=for-the-badge" />
@@ -41,6 +41,8 @@ Super simple pastebin webapp made with tRPC, NextJS and MongoDB. Supports themes
 </p>
 
 <br/>
+<p align="center">View a demo of the site at <a href="https://pastebin.liamclegg.co.uk./">pastebin.liamclegg.co.uk</a></p>
+
 
 [![thumbnail](https://i.imgur.com/E7hzBHu.png)](https://pastebin.liamclegg.co.uk/)
 
